@@ -6,7 +6,7 @@ This gem is will connect to your calendar on Microsoft Exchange server and make 
 Prerequisites
 -------------
 
-On Mac, growl and growl gem need to be installed. On linux, libnotify-bin is the only dependency.
+On Mac, growl, growlnotify and growl gem need to be installed. On linux, libnotify-bin is the only dependency.
 
 Installation
 ------------
