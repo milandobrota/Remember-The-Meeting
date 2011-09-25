@@ -27,4 +27,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rubyntlm'
   s.add_runtime_dependency 'icalendar'
   s.add_runtime_dependency 'viewpoint'
+  s.add_runtime_dependency 'highline'
 end

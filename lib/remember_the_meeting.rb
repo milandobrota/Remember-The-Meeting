@@ -4,6 +4,7 @@ include Platform
 
 require 'viewpoint'
 require 'yaml'
+require 'highline/import'
 require 'growl' unless linux?
 
 require File.join(File.dirname(__FILE__), 'remember_the_meeting', 'calendar_item_patch')
@@ -23,8 +24,9 @@ module RememberTheMeeting
     end
     
     def setup
+      password = ask("Enter password: ") { |q| q.echo = false }
       Viewpoint::EWS::EWS.endpoint = config['server']
-      Viewpoint::EWS::EWS.set_auth(config['user'], config['pass'])
+      Viewpoint::EWS::EWS.set_auth(config['user'], password)
       @cal = Viewpoint::EWS::CalendarFolder.get_folder :calendar
       @cal.subscribe
     end
