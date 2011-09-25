@@ -24,5 +24,6 @@ or mate, gedit or whatever. Then run:
 
 to configure the connection. Finally, run:
 
-```remember_the_meeting```
-
+```
+remember_the_meeting
+```
