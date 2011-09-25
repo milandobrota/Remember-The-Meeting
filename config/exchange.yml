@@ -1,0 +1,3 @@
+server: https://yourserver.com/ews/exchange.asmx
+user:   domain\\user
+pass:   pass

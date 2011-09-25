@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__), '..', 'lib', 'remember_the_meeting')
+
+ARGV.first == 'config' ? RememberTheMeeting.configure : RememberTheMeeting.enable!
